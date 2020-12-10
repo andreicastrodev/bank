@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+
+		<title>Squips Banking</title>
+	</head>
+	<body>
+
+
+		<div class="wrapper">
+			
+		
+		<div class="login">
+			<div class="login__heading">
+				<h1 class="heading-1">Squips</h1>
+				<span>All your fancy banking needs</span>
+			</div>
+
+
+			<form action="#" class="login__form">
+				<div class="login__group">
+					<label for="name" class="login__label"></label>
+					<input
+						type="text"
+						class="login__input usernames"
+						placeholder="Username"
+					/>
+				</div>
+
+				<div class="login__group">
+					<label for="pass" class="login__label"></label>
+					<input
+						type="password"
+						class="login__input password"
+						placeholder="Password"
+					/>
+				</div>
+
+				<button class="btn btn-login">Login</button>
+			</form>
+		</div>
+
+			<div class="greetings">
+				<h1 class="heading-1 greet">Welcome back, </h1>
+			</div>
+
+
+
+		<div class="container">
+			<div class="current">
+				<div class="current__balance">
+					<h3 class="heading-3">
+						Current balance
+					</h3>
+					<span class="spans">as of 08/12/2020, 13:14</span>
+				</div>
+				<div class="current__amount">
+					<h3 class="heading-3 balance">25 952,59 €</h3>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="movements">
+					<div class="movements__row">
+						<div class="movements__type movements__type--deposit">
+							2 deposit
+						</div>
+						<div class="movements__date">3 days ago</div>
+						<div class="movements__value">4 000€</div>
+					</div>
+        <div class="movements__row">
+          <div class="movements__type movements__type--withdrawal">
+            1 withdrawal
+          </div>
+          <div class="movements__date">24/01/2037</div>
+          <div class="movements__value">-378€</div>
+        </div>				
+				</div>
+
+				<div class="function">
+					<div class="function__box">
+						<h4 class="heading-4 mb-small">Transfer Money</h4>
+
+						<form action="#" class="function__form">
+							<div class="function__group">
+								<label
+									for="name"
+									class="function__label"
+								></label>
+								<input
+									type="text"
+									class="function__input transfer__name"
+									required="name"
+									placeholder="Username"
+								/>
+							</div>
+
+							<div class="function__group">
+								<label
+									for="name"
+									class="function__label"
+								></label>
+								<input
+									type="number"
+									class="function__input transfer__amount"
+									placeholder="Amount"
+								/>
+							</div>
+							<button class="btn-main btn-transfer">&#8594;</button>
+						</form>
+					</div>
+
+					<div class="function__box function__box--2">
+						<h4 class="heading-4 mb-small">Request Loan</h4>
+
+						<form action="#" class="function__form">
+							<div class="function__group">
+								<label
+									for="name"
+									class="function__label"
+								></label>
+								<input
+									type="number"
+									class="function__input loan__amount"
+									required="password"
+									placeholder="Amount"
+								/>
+							</div>
+							<button class="btn-main btn-loan">&#8594;</button>
+						</form>
+					</div>
+
+					<div class="function__box function__box--3">
+						<h4 class="heading-4 mb-small">Delete Account</h4>
+
+						<form action="#" class="function__form">
+							<div class="function__group">
+								<label
+									for="name"
+									class="function__label"
+								></label>
+								<input
+									type="text"
+									class="function__input delete__name"
+									placeholder="Username"
+								/>
+							</div>
+
+							<div class="function__group">
+								<label
+									for="name"
+									class="function__label"
+								></label>
+								<input
+									type="password"
+									class="function__input delete__pass"
+									maxLe
+									placeholder="Pin"
+								/>
+							</div>
+							<button class="btn-main btn-delete">&#8594;</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+
+      <div class="summary">
+      	<div class="summary__group">
+        <p class="summary__label">In</p>
+        <p class="summary__value summary__value--in">0000€</p>      		
+      	</div>
+
+      	<div class="summary__group">
+        <p class="summary__label">Out</p>
+        <p class="summary__value summary__value--out">0000€</p>
+            		
+      	</div>
+
+      	<div class="summary__group">
+		<p class="summary__label">Interest</p>  
+        <p class="summary__value summary__value--interest">0000€</p>      		
+      	</div>
+
+
+        <button class="btn-main btn-sort">&downarrow; SORT</button>
+      </div>
+		</div>
+
+	</div>	
+		<script src="anime.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

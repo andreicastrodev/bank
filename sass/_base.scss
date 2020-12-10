@@ -1,0 +1,85 @@
+// COLORS
+
+$color-primary:#00ffff;
+$color-primary-dark-1:#00e6e6;
+$color-primray-dark-2:#00b3b3;
+
+// MEDIA QUERIES
+$bp-largest:75em; //1200 px
+$bp-large:62.5em; //1000px
+$bp-medium:50em; // 800px
+$bp-small:37.5em; // 600px
+$bp-smallest: 25em; // 400px
+$bp-mini: 20em; // 320px
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%; // 10px/16px  =62.5% = 1 rem = 10 px;
+ 	@media only screen and (max-width: $bp-small){
+ 	font-size: 50%;
+ }
+
+}
+
+
+body{	
+	font-family:'Poppins', sans-serif;
+	font-weight: 300;
+	line-height: 1.6;
+	color: #FFFFFF;
+	background: linear-gradient(-45deg, #fad0c4 , #ffd1ff, );
+	background-size: 400% 400%;
+	animation: gradient 50s ease infinite;
+
+}
+
+
+
+.wrapper{
+	display: grid;
+	grid-template-rows: 100vh;
+	grid-template-columns:[full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end]) [center-end] 1fr [full-end];	
+}
+
+// GRID LAYOUT
+
+.container{
+	display: grid;
+	grid-template-rows: min-content min-content min-content ;
+	grid-template-columns:[full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content,14rem) [col-end]) [center-end] 1fr [full-end];
+	grid-column: center-start / center-end;
+	grid-row: 1 / -1;
+	
+	padding: 5rem;
+	margin: 8rem auto;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 2s ease-in;
+	border-radius: 1rem;
+
+ 	@media only screen and (max-width: $bp-largest){
+	grid-column: full-start / full-end;
+	margin: unset;
+ }		
+
+
+}
+
+.btn-main{
+	outline: none;
+	border:none;
+	padding: .2rem 1rem;
+	font-family:'Poppins', sans-serif;
+	font-weight: 700;
+	cursor: pointer;
+
+}
